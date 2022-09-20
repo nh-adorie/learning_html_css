@@ -24,6 +24,7 @@ html {
 4. Kiểu chữ, kiểu dáng
  */
 
+ /* COMMON */
  .clear {
     clear: both;
 
@@ -33,6 +34,30 @@ html {
     color: #fff !important;
 
 }
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-full {
+    width: 100%;
+}
+.row {
+    width: 100%;
+
+}
+
+/* MAIN */
 #main {
 
 }
@@ -262,18 +287,16 @@ html {
     margin-top: 30px;
     width: 100%;
     display: inline-block;
-}
-.place-list {
     background-color:rgb(100, 46, 10);
     margin-left: -8px;
-    margin-right: -8px;
+    margin-right: 8px;
     /* Cách để làm 2 cái viền thẳng hàng */
 }
 .place-item {
     float: left;
     width: 33.3333%;   
     text-align: left;
-    padding-right: -8px;
+    padding-right: 8px;
     padding-left: 8px;
     padding-bottom: 20px;
     padding-top: 0px;
@@ -321,9 +344,36 @@ html {
     padding-bottom: 20px;
 }
 
+.contact-container {
+    padding-top: 32px;
+}
+
+.contact-container .ti-location-pin  {
+    padding-right: 8px;
+}
+
+.contact-container .ti-mobile  {
+    padding-right: 8px;
+}
+
+.contact-container .ti-email  {
+    padding-right: 8px;
+}
+
+.contact-container-input {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #ccc;
+    height: 35px;
+    border:#ccc solid 1px;
+}
+  
+
 #modal.open {
     display: flex;
 }
+
 #modal {
     position: fixed;
     top: 0;
@@ -345,6 +395,7 @@ html {
     max-width: calc(100%- 32px);
     min-height: 200px;
     position: relative;
+    animation: modalFadeIn ease .6s;
 
 }
 
@@ -424,4 +475,15 @@ html {
 
 #footer {
     
+}
+
+@keyframes modalFadeIn {
+    from {
+    opacity: 0;
+    transform: translateY(-150px);  
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0px);    
+    }
 }
