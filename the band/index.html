@@ -34,7 +34,7 @@
                 <i class="ti-search"></i>
             </div>
             </div>
-        </div>
+        
 
         <div id="slider">
             <div class="text-content">
@@ -50,13 +50,13 @@
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">
                     If I had to live my life without you near me. The days would all be empty. The nights would seem so long
-With you I see forever, oh, so clearly
-I might have been in love before
-But it never felt this strong
-Our dreams are young and we both know
-They'll take us where we want to go
-Hold me now, touch me now
-I don't want to live without you
+                    With you I see forever, oh, so clearly
+                    I might have been in love before
+                    But it never felt this strong
+                    Our dreams are young and we both know
+                    They'll take us where we want to go
+                    Hold me now, touch me now
+                    I don't want to live without you
                 </p>
 
             <div class="member-list">
@@ -100,7 +100,10 @@ I don't want to live without you
                         <h3 class="place-name">New York</h3>
                         <p class="place-date">Fri 27 Nov 2016</p>
                         <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                       
+                        <div class="button-cover">
+                            <button class="button js-buy-ticket">Buy Now</button>
+                        </div>   
+                        
                     </div>   
                     <div class="place-item">
                         <!-- Place 2 -->
@@ -108,7 +111,9 @@ I don't want to live without you
                         <h3 class="place-name">Paris</h3>
                         <p class="place-date">Sat 28 Nov 2016</p>
                         <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                       
+                        <div class="button-cover">
+                            <button class="button js-buy-ticket">Buy Now</button>
+                        </div> 
                     </div>
                     <div class="place-item">
                         <!-- Place 3 -->
@@ -116,7 +121,9 @@ I don't want to live without you
                         <h3 class="place-name">Sans Francisco</h3>
                         <p class="place-date">Sun 29 Nov 2016</p>
                         <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                      
+                        <div class="button-cover">
+                            <button class="button js-buy-ticket">Buy Now</button>
+                        </div> 
                     </div>
                     
                   </div>
@@ -136,7 +143,47 @@ I don't want to live without you
 
         </div>
 
+        <div id="modal" class="open">
+            <div class="modal-container">
+                <div class="modal-button">
+                    <i class="ti-close"></i>
+                </div>
 
+                <header class="modal-header">
+                    <i class="ti-bag"></i>
+                    Tickets
+                </header>
+                <div class="modal-body">
+                    <!-- How many -->
+                    <label for="quantity" class="modal-label">
+                        <i class="ti-shopping-cart"></i>
+                        Tickets, 15$ per person
+                    </label>
+                    <input id="quantity" type="text" class="modal-input" placeholder="How many?"> 
+                    
+                    <!-- Send to -->
+                    <label for="email" class="modal-label">
+                        <i class="ti-github"></i>
+                        Send to
+                    </label>
+                    <input id="email"type="text" class="modal-input" placeholder="Enter Email">  
+                    
+                    <button id="buy-ticket">
+                        Pay
+                        <i class="ti-check"></i>
+                    </button>
+                </div>
+
+                <footer class="modal-footer">
+                    <p class="modal-help">Need <a>help?</a></p>
+                </footer>
+
+            </div>
+
+        </div>
     </div>
+<script>
+    const buyBtns = document.querySelectorAll('js-buy-ticket')
+</script>  
 </body>
 </html>
