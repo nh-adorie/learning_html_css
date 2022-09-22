@@ -7,7 +7,7 @@
 
 html {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    scroll-behavior: smooth;
 
 }
 /* 
@@ -304,6 +304,7 @@ html {
 
 .place-list .place-img {
     width: 100%;
+    
 }
 
 .place-img:hover {
@@ -337,6 +338,7 @@ html {
     margin-left: 20px;
     margin-top: 20px;
     text-decoration: none;
+    border: none;
 }
 
 .button-cover {
@@ -361,14 +363,59 @@ html {
 }
 
 .contact-container-input {
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin-bottom: 5px;
     display: inline-block;
     color: #ccc;
     height: 35px;
     border:#ccc solid 1px;
+    outline:rgb(100, 46, 10);
 }
-  
+
+input.form-submit-btn {
+    color: white;
+    background-color: black;
+    display: block;
+    border: 1px solid black;
+    margin: 5px;
+    float: right;
+    padding: 7px;
+}
+
+input.form-submit-btn:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.map-section img {
+    margin-top: 100px;
+    width: 100%;
+
+}
+
+#footer {
+    padding: 50px 16px;
+    text-align: center;
+    font-size: 24px;
+    }
+
+#footer a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    padding: 2px;
+}
+
+#footer p {
+    color: rgba(0,0,0,0.6);
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+
+}
+
+#footer a:hover {
+    opacity: 0.4;
+}
 
 #modal.open {
     display: flex;
